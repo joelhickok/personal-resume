@@ -29,7 +29,7 @@ export default function Header() {
 
         </div>
 
-        <div className="contact-block bg-slate-200 p-2">
+        <div className="contact-block bg-slate-300 dark:bg-emerald-700 p-2">
 
             <div className="contact-row">
                 <div>
