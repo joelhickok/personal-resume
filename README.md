@@ -1,14 +1,16 @@
 # Resume for Joel Hickok
-### Last update: 2026-03-12
 
-Not full stack, but built with full stack tech.
+Not full stack, but Next with React.
+
+Just my resume.  But minor interactivity with `<a>` tags - mainly with an interactive Leaflet map.
 
 Tech:
-* HTML/CSS/JavaScript
 * TypeScript
-* SCSS
+* Tailwind
 * Next.js (App Router)
-* Pico.css
+* Leaflet
+* Date-fns
+* Iconify
 
 ## Next.js Development
 
