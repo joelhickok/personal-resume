@@ -9,18 +9,12 @@ import DarkModeSwitch from '@components/dark-mode-switch'
 // libs
 import experiences from '@lib/past-experience'
 import introText from '@lib/intro-text'
+import tags from '@lib/tags'
 
 export default function Home() {
 
     const containerRef = useRef<HTMLDivElement | null>(null)
 
-    const skills = [
-        'ArcGIS Product Suite', 'Leaflet', 'Front-end Dev', 'Full Stack Dev', 'Node.js', 'Quickbase',
-    ]
-
-    const languages = ['JavaScript', 'TypeScript', 'Python', 'Jinja', 'C#', '...more']
-
-    const strengths = ['GIS', 'GeoSpatial', 'Web Dev', 'Backend', 'Project Management']
 
     const updateDarkMode = (isDarkMode: boolean) => {
         if (isDarkMode && containerRef.current) {
@@ -81,16 +75,18 @@ export default function Home() {
 
 
                 <SectionHeader title="Strengths" icon="icon-park-outline:muscle"/>
-                <TagList list={strengths}/>
-
-                <SectionHeader title="Languages" icon="solar:programming-outline"/>
-                <TagList list={languages}/>
+                <TagList list={tags.strengths}/>
 
                 <SectionHeader title="Skills" icon="game-icons:skills">
+                    {/* insert middle column */}
                     <div className="text-xs text-gray-400 font-normal">Partial list</div>
                 </SectionHeader>
+                <TagList list={tags.skills}/>
 
-                <TagList list={skills}/>
+                <SectionHeader title="Languages" icon="solar:programming-outline"/>
+                <TagList list={tags.languages}/>
+
+
                 <SectionHeader title="Experience" icon="mdi:tool-time"/>
 
                 {experiences.map((experience, i) =>

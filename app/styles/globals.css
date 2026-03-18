@@ -102,13 +102,13 @@ a {
 }
 
 .tag-list {
-    @apply grid gap-2 grid-flow-col grid-rows-2;
-    @apply sm:grid-flow-row sm:grid-cols-5;
+    @apply grid gap-2 grid-flow-col grid-rows-2 ;
+    @apply sm:grid-flow-row sm:grid-cols-4;
 }
 
 .tag {
     @apply text-sm bg-slate-200 dark:bg-mauve-400 dark:text-mauve-800;
-    @apply px-1 py-0.5 rounded-lg text-center cursor-default;
+    @apply px-1 py-0.5 rounded-lg text-center cursor-default content-center ;
 }
 
 .tag:hover {
