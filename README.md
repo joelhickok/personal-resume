@@ -9,9 +9,10 @@ Tech:
 * SCSS
 * Next.js (App Router)
 * Pico.css
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Next.js Development
+
+Install dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```sh
 npm run dev
