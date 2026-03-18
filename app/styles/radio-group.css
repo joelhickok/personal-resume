@@ -1,0 +1,30 @@
+:root {
+    --radio-size:  16px;
+}
+
+.radio-group-root {
+    @apply flex gap-4 justify-center items-center w-full;
+}
+
+.radio-group-item {
+    @apply bg-zinc-400 rounded-full;
+    width: var(--radio-size);
+    height: var(--radio-size);
+    box-shadow: 0 2px 4px lightslategray;
+}
+
+.radio-group-item:hover {
+    @apply bg-red-400 cursor-pointer;
+}
+.radio-group-item:focus {
+    box-shadow: 0 0 0 2px black;
+}
+
+.radio-group-indicator::after {
+    content: "";
+    display: block;
+    width: calc(var(--radio-size) - 1px);
+    height: calc(var(--radio-size) - 1px);
+    border-radius: 50%;
+    @apply bg-teal-600;
+}

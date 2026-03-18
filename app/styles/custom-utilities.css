@@ -1,0 +1,33 @@
+@utility body-color {
+    @apply text-mist-600 dark:text-yellow-200;
+}
+
+@utility light-color {
+    @apply text-zinc-700 dark:text-zinc-200;
+}
+
+@utility title-color {
+    @apply text-emerald-800 dark:text-emerald-300;
+}
+
+@utility subtitle-color {
+    @apply text-emerald-600 dark:text-emerald-300;
+}
+
+@utility secondary-color {
+    @apply text-mauve-400 dark:text-mist-400 italic;
+}
+
+@utility separator-line {
+    @apply border-b border-b-gray-300;
+    @apply dark:border-b-gray-500;
+}
+
+@utility separator-line-top {
+    @apply border-t border-t-gray-300;
+    @apply dark:border-t-gray-500;
+}
+
+@utility accent-color {
+    @apply text-teal-600 dark:text-emerald-300;
+}

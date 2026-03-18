@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@import "./custom-utilities.css";
+@import "./switch.css";
+@import "./dialog.css";
+@import "./radio-group.css";
+
+:root {
+    --background: #ffffff;
+    /*--foreground: #171717;*/
+    /*--primary-font: 'Source Code Pro Variable', monospace;*/
+    /*--primary-font: 'Fira Code Variable', monospaceo;*/
+    /*--primary-font:   'Open Sans Variable', sans-serif;*/
+    --primary-font: 'Outfit Variable', sans-serif;
+    /*--primary-font: 'Source Code Pro Variable', mo nospace;*/
+    /*--primary-font: 'Source Code Pro Variable', monospace;*/
+}
+
+@theme inline {
+    --color-background: var(--background);
+    /*--color-foreground: var(--foreground);*/
+    --font-sans: var(--primary-font);
+    /*--font-sans: var(--font-geist-sans);*/
+    /*--font-mono: var(--font-geist-mono);*/
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+    background: var(--background);
+    /*color: var(--foreground);*/
+    font-family: Arial, Helvetica, sans-serif;
+    @apply body-color;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+
+body.no-scroll {
+    overflow: clip !important;
+    position: fixed !important;
+}
+
+a {
+    @apply text-slate-800 dark:text-emerald-100 no-underline;
+}
+
+.section-head > svg {
+    @apply accent-color;
+}
+
+.resume-container {
+    @apply flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black;
+}
+
+.resume-body {
+    @apply min-h-screen w-full max-w-xl py-6 px-4 bg-white dark:bg-mauve-700 sm:items-start;
+    @apply lg:max-w-4xl lg:py-6 lg:px-16;
+}
+
+.header-intro {
+    @apply separator-line separator-line-top;
+    @apply flex justify-between items-end bg-zinc-100 dark:bg-zinc-600 p-2;
+}
+
+.header-intro-title1 {
+    @apply light-color text-xl uppercase tracking-wide;
+}
+
+.header-intro-title2 {
+    @apply font-bold text-xl md:text-2xl title-color uppercase;
+}
+
+.contact-block {
+    @apply font-normal
+}
+
+.contact-row {
+    @apply flex justify-between mt-1 text-sm;
+}
+
+.section-head {
+    @apply flex gap-4 items-end mt-6 mb-2 justify-between separator-line;
+    @apply lg:mt-6;
+}
+
+.section-head * {
+    @apply mb-1;
+}
+
+.section-title {
+    @apply text-xl uppercase font-bold mb-0 pb-0;
+    @apply subtitle-color;
+}
+
+.section-body {
+
+}
+
+.section-subtitle {
+    @apply flex md:flex-row flex-col justify-between;
+}
+
+.tag-list {
+    @apply grid gap-2 grid-flow-col grid-rows-2;
+    @apply sm:grid-flow-row sm:grid-cols-5;
+}
+
+.tag {
+    @apply text-sm bg-slate-200 dark:bg-mauve-400 dark:text-mauve-800;
+    @apply px-1 py-0.5 rounded-lg text-center cursor-default;
+}
+
+.tag:hover {
+    @apply bg-slate-800 text-white;
+}
+
+#map {
+    @apply relative;
+    width: 100%;
+    height: 100%;
+    @apply grow rounded-xl;
+}
+
+.leaflet-control-minimap {
+    @apply border-2 border-slate-600 border-double;
+}

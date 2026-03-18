@@ -1,0 +1,63 @@
+.dialog-overlay {
+    @apply fixed bg-black/60;
+    inset: 0;
+    animation: overlayShow 1500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dialog-content {
+    @apply w-11/12 h-11/12 sm:size-200 bg-slate-100 p-5 rounded-md fixed;
+    box-shadow: 0 2px 6px lightslategray;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dialog-content[data-state="open"] {
+    animation: contentShow 1500ms cubic-bezier(0.16, 1, 0.3, 1)
+}
+
+.dialog-content[data-state="closed"] {
+    animation: contentHide 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dialog-content:focus {
+    outline: none;
+}
+
+.dialog-title {
+    @apply text-2xl text-emerald-800 font-bold;
+}
+
+.dialog-description {
+    @apply text-base text-slate-800 leading-7;
+}
+
+@keyframes overlayShow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes contentShow {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes contentHide {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -48%) scale(0.96);
+    }
+}
