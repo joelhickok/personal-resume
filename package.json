@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "vercel deploy --prod"
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@fontsource-variable/outfit": "^5.2.8",

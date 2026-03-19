@@ -59,30 +59,34 @@ export default function ModalContainer({children, triggerText}: Props) {
                             </Dialog.Close>
                         </div>
 
-                        <Dialog.Description className="dialog-description">
-                            <Image
-                                width="1000"
-                                height="100"
-                                src={currentImage.src}
-                                alt={currentImage.label}
-                                title={currentImage.label}
-                                className="rounded-xl mb-2"/>
-                            <RadioGroup.Root
-                                className="radio-group-root"
-                                orientation="horizontal"
-                                value={currentImage.src}
-                                aria-label="Switch image"
-                                onValueChange={selectImage}
-                            >
-                                {images.map((image, i) => {
-                                    return (<RadioGroup.Item key={i}
-                                                             className={`radio-group-item`}
-                                                             value={image.src}
-                                                             id={image.label}>
+                        <Image
+                            width="1000"
+                            height="100"
+                            src={currentImage.src}
+                            alt={currentImage.label}
+                            title={currentImage.label}
+                            className="rounded-xl mb-2"/>
+
+                        <RadioGroup.Root
+                            className="radio-group-root"
+                            orientation="horizontal"
+                            value={currentImage.src}
+                            aria-label="Switch image"
+                            onValueChange={selectImage}
+                        >
+                            {images.map((image, i) => {
+                                return (
+                                    <RadioGroup.Item key={i}
+                                                     className={`radio-group-item`}
+                                                     value={image.src}
+                                                     id={image.label}>
                                         <RadioGroup.Indicator className="radio-group-indicator"/>
-                                    </RadioGroup.Item>)
-                                })}
-                            </RadioGroup.Root>
+                                    </RadioGroup.Item>
+                                )
+                            })}
+                        </RadioGroup.Root>
+
+                        <Dialog.Description className="dialog-description">
                             {caption}
                         </Dialog.Description>
 
