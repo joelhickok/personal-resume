@@ -24,7 +24,8 @@ const strengths = [
     'Geospatial Web Apps',
     'Customer Project Scoping',
     'Project Management',
-    'Quickbase'
+    'Quickbase',
+    'Detailed User Experience',
 ]
 
 
