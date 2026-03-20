@@ -24,7 +24,18 @@ export default function ExperienceBlock({title, employer, date, duties}: Experie
         })
     }
 
-    return <div className="mt-1 mb-2 pb-3 separator-line">
+    const determineBreak = (title) => {
+        switch (title) {
+            case 'GIS Specialist I':
+                return ' break-before-page'
+            // case 'Older Experience':
+            //     return ' break-before-page'
+            default:
+                return ''
+        }
+    }
+
+    return <div className={'mt-1 mb-2 pb-3 separator-line' + determineBreak(title)}>
         <div className="section-subtitle">
             <div className="font-bold">{title}</div>
             <div className="italic lg:not-italic">{employer}</div>
@@ -33,7 +44,7 @@ export default function ExperienceBlock({title, employer, date, duties}: Experie
             <div>{formatExperienceInterval(date)}</div>
             <div>{formatExpDuration(date)}</div>
         </div>
-        <ul className="list-disc pl-6 mt-3">
+        <ul className="list-disc pl-6 mt-3 print:text-sm">
             {duties.map((duty, i) =>
                 <li key={i} className="">{duty}</li>
             )}

@@ -56,10 +56,15 @@ export default function Header() {
                     </a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/joel-hickok-developer" className="flex gap-1 items-center">
+                    <a href="https://www.linkedin.com/in/joel-hickok-developer"
+                       className="flex gap-1 items-center print:hidden">
                         <Icon icon="tabler:brand-linkedin" className="text-2xl"/>
                         LinkedIn
                     </a>
+                    <span className="flex gap-1 items-center hidden print:flex">
+                        <Icon icon="tabler:brand-linkedin" className="text-2xl"/>
+                        https://www.linkedin.com/in/joel-hickok-developer
+                    </span>
                 </div>
             </div>
 

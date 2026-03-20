@@ -23,6 +23,24 @@
     /*--font-mono: var(--font-geist-mono);*/
 }
 
+@layer base {
+    @media print {
+        .tag {
+            @apply border border-gray-300;
+        }
+        body {
+            @apply bg-white text-black!;
+        }
+
+        html {
+            /*zoom: 0.75;*/
+        }
+        .print-margin {
+            /*margin: -1in;*/
+        }
+    }
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 body {
@@ -56,6 +74,7 @@ a {
 .resume-body {
     @apply min-h-screen w-full max-w-xl py-6 px-4 bg-white dark:bg-mauve-700 sm:items-start;
     @apply lg:max-w-4xl lg:py-6 lg:px-16;
+    @apply print:max-w-dvw;
 }
 
 .header-intro {
@@ -98,7 +117,7 @@ a {
 }
 
 .section-subtitle {
-    @apply flex md:flex-row flex-col justify-between;
+    @apply flex md:flex-row print:flex-row flex-col justify-between;
 }
 
 .tag-list {
@@ -108,7 +127,8 @@ a {
 
 .tag {
     @apply text-sm bg-slate-200 dark:bg-mauve-400 dark:text-mauve-800;
-    @apply px-1 py-0.5 rounded-lg text-center cursor-default content-center ;
+    @apply px-1 py-0.5 rounded-lg text-center cursor-default content-center;
+    @applt print:border print:border-gray-900 print:text-xs!;
 }
 
 .tag:hover {

@@ -1,5 +1,7 @@
 'use client'
 import {useRef,} from 'react'
+import {Icon} from '@iconify/react'
+
 // components
 import Header from '@components/header'
 import ExperienceBlock from '@components/experience-block'
@@ -32,8 +34,13 @@ export default function Home() {
             {/* bug forced dark text class to go here */}
             <main className="resume-body dark:text-mauve-200">
 
-                <div className="flex justify-end items-center -mt-4 sm:mt-0 pb-2">
-                    <DarkModeSwitch updateDarkMode={updateDarkMode}/>
+                <div className="print:hidden flex justify-end items-center -mt-4 sm:mt-0 pb-2 gap-4">
+                    <div className="flex justify-end items-center" title="Enable Dark Mode">
+                        <DarkModeSwitch updateDarkMode={updateDarkMode}/>
+                    </div>
+                    <button title="Print" role="button" onClick={() => window.print()}>
+                        <Icon icon="uit:print" className="text-2xl"/>
+                    </button>
                 </div>
 
                 <Header/>
@@ -83,14 +90,15 @@ export default function Home() {
                 </SectionHeader>
                 <TagList list={tags.skills}/>
 
+                <div className="break-after-page"></div>
+
                 <SectionHeader title="Languages" icon="solar:programming-outline"/>
                 <TagList list={tags.languages}/>
-
 
                 <SectionHeader title="Experience" icon="mdi:tool-time"/>
 
                 {experiences.map((experience, i) =>
-                    <ExperienceBlock key={i} {...experience}></ExperienceBlock>
+                    <ExperienceBlock key={i} {...experience}/>
                 )}
 
             </main>

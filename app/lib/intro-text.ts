@@ -8,7 +8,8 @@ const introText = [
     I have tested and used many JavaScript frameworks, including Vue, Svelte, React, and many
     more. Always eager and learning. Incredibly adaptable and resourceful.`,
 
-    `Outside of my career, I nurture many hobbies that include family time, trail running, home renovations such as solar power 
+    `Outside of my career, I nurture many hobbies that include family time, trail running,
+     home renovations such as solar power 
     and knocking down interior walls, hobby farming and animal husbandry, plus more!`,
 ]
 
