@@ -24,7 +24,7 @@ export default function ExperienceBlock({title, employer, date, duties}: Experie
         })
     }
 
-    const determineBreak = (title) => {
+    const determineBreak = (title:string) => {
         switch (title) {
             case 'GIS Specialist I':
                 return ' break-before-page'
