@@ -28,6 +28,7 @@
         .tag {
             @apply border border-gray-300;
         }
+
         body {
             @apply bg-white text-black!;
         }
@@ -35,6 +36,7 @@
         html {
             /*zoom: 0.75;*/
         }
+
         .print-margin {
             /*margin: -1in;*/
         }
@@ -59,6 +61,10 @@ body.no-scroll {
     position: fixed !important;
 }
 
+button {
+    @apply cursor-pointer;
+}
+
 a {
     @apply text-slate-800 dark:text-emerald-100 no-underline;
 }
@@ -73,7 +79,7 @@ a {
 
 .resume-body {
     @apply min-h-screen w-full max-w-xl py-6 px-4 bg-white dark:bg-mauve-700 sm:items-start;
-    @apply lg:max-w-4xl lg:py-6 lg:px-16;
+    @apply lg:max-w-5xl lg:py-6 lg:px-16;
     @apply print:max-w-dvw;
 }
 
@@ -121,14 +127,17 @@ a {
 }
 
 .tag-list {
-    @apply grid gap-2 grid-flow-col grid-rows-2 ;
-    @apply sm:grid-flow-row sm:grid-cols-4;
+    @apply gap-2;
+    /*@apply grid gap-2 grid-flow-col grid-rows-2 ;*/
+    /*@apply sm:grid-flow-row sm:grid-cols-4;*/
+    @apply flex flex-wrap;
+    /*@apply grid grid-flow-row-dense grid-cols-4 grid-rows-2;*/
 }
 
 .tag {
     @apply text-sm bg-slate-200 dark:bg-mauve-400 dark:text-mauve-800;
-    @apply px-1 py-0.5 rounded-lg text-center cursor-default content-center;
-    @applt print:border print:border-gray-900 print:text-xs!;
+    @apply px-1 py-1 px-2 rounded-lg text-center cursor-default content-center;
+    @apply print:border print:border-gray-300 print:text-xs!;
 }
 
 .tag:hover {

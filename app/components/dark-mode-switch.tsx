@@ -13,7 +13,7 @@ export default function DarkModeSwitch({updateDarkMode}: DarkModeSwitchProps) {
     }, [isDarkMode, updateDarkMode])
 
     return <>
-        <Switch.Root className="switch-root"
+        <Switch.Root className="switch-root cursor-pointer"
                      id="dark-mode"
                      checked={isDarkMode}
                      data-state={`${isDarkMode ? 'checked' : 'unchecked'}`}
@@ -21,6 +21,6 @@ export default function DarkModeSwitch({updateDarkMode}: DarkModeSwitchProps) {
         >
             <Switch.Thumb className="switch-toggle"/>
         </Switch.Root>
-        <label className="switch-label" htmlFor="dark-mode">Dark</label>
+        <label className="switch-label cursor-pointer" htmlFor="dark-mode">Dark</label>
     </>
 }

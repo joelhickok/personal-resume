@@ -50,7 +50,7 @@ export default function Home() {
                 <div className="text-sm">
                     {introText.map((text, i) => {
                         return (
-                            <p key={i} className={`${i > 0 ? 'mt-1' : ''}`}>
+                            <p key={i} className={`${i > 0 ? 'mt-2' : ''}`}>
                                 {text}
                             </p>
                         )

@@ -1,12 +1,25 @@
 const skills = [
-    'ArcGIS Product Suite',
-    'Leaflet',
+    'Web Maps',
     'Front-end Dev',
     'Full Stack Dev',
+    'API Development',
+    'Web Services',
+    'ArcGIS Online',
+    'ArcGIS Enterprise',
+    'ArcGIS JS API',
+    'Turf.js',
+    'Leaflet',
+    'XML',
+    'JSON',
+    'HTML',
+    'CSS',
+    'Vue',
+    'Svelte',
+    'React',
     'Node.js',
     'Version Control',
     'Quickbase',
-    '...more not listed'
+    '...partial list!'
 ]
 
 const languages = [
@@ -15,19 +28,18 @@ const languages = [
     'Python',
     'Jinja',
     'C#',
-    '...more with less experience',
+    'ASP.NET',
+    'Others...',
 ]
 
 const strengths = [
-    'Geospatial App Integrations',
+    'Geospatial Integrations',
+    'Software Infrastructure Management',
+    'Geospatial Apps &amp; Web Maps',
+    'UI/UX',
+    'Customer Project Scoping &amp; Requirements',
     'ETL Scripting',
-    'Geospatial Web Apps',
-    'Customer Project Scoping',
-    'Project Management',
-    'Quickbase',
-    'Detailed User Experience',
 ]
-
 
 const tags = {
     skills,
