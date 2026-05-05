@@ -2,12 +2,15 @@
   "name": "personal-resume",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "vercel --prod"
+    "deploy": "NODE_ENV=production vercel --prod"
   },
   "dependencies": {
     "@fontsource-variable/outfit": "^5.2.8",
@@ -16,6 +19,7 @@
     "@radix-ui/react-switch": "^1.2.6",
     "date-fns": "^4.1.0",
     "he": "^1.2.0",
+    "html-react-parser": "^6.0.1",
     "leaflet": "^1.9.4",
     "leaflet-easybutton": "^2.4.0",
     "leaflet-extra-markers": "^2.0.1",
@@ -25,7 +29,6 @@
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-html-parser": "^2.0.2",
     "sass": "^1.98.0"
   },
   "devDependencies": {

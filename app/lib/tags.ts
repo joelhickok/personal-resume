@@ -3,6 +3,8 @@ const skills = [
     'Front-end Dev',
     'Full Stack Dev',
     'API Development',
+    'Realtime ETL middleware',
+    'Containerization (+ Dev Containers)',
     'Web Services',
     'ArcGIS Online',
     'ArcGIS Enterprise',
@@ -33,7 +35,7 @@ const languages = [
 ]
 
 const strengths = [
-    'Geospatial Integrations',
+    'Databse &amp; Geospatial Integrations',
     'Quickbase',
     'Software Infrastructure Management',
     'Geospatial Apps &amp; Web Maps',

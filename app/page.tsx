@@ -1,7 +1,7 @@
 'use client'
 import {useRef,} from 'react'
 import {Icon} from '@iconify/react'
-import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 
 // components
 import Header from '@components/header'
@@ -52,7 +52,7 @@ export default function Home() {
                     {introText.map((text, i) => {
                         return (
                             <p key={i} className={`${i > 0 ? 'mt-2' : ''}`}>
-                                {ReactHtmlParser(text)}
+                                {parse(text)}
                             </p>
                         )
                     })}

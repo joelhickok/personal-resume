@@ -11,8 +11,9 @@ const introText = [
 
     `Working with web apps, GIS, application development, and low-code apps like Quickbase, I have utilized Python/Jinja,
     JavaScript/TypeScript, Node.js, C#, HTML/CSS, and other languages to provide solutions.  I starting building
-    web content as a professional in 1998 and now have experience with front-end frameworks such as Angular.js, Vue,
-    React, and Svelte.  To solve problems and build apps or middleware, I learn what I need to efficiently and
+    web content as a professional in 1998 and now have a lot of experience with front-end frameworks such as Angular.js, Vue,
+    React, and Svelte, as well as server-based apps and scripting.  Of course, developer tools make a difference, and I 
+    embrace dev containers and other tools that increase productivity.  To solve problems and build apps or middleware, I learn what I need to efficiently and
      effectively deliver products.`,
 
     `Always eager and learning. Incredibly adaptable and resourceful.  I also am strong on the customer relations 
