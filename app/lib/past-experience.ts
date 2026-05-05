@@ -27,11 +27,11 @@ const experiences: Experience[] = [
         },
         description: undefined,
         duties: [
+            'Develop complex Quickbase low-code applications (enterprise and department-level).  Integrate Quickbase with other software using middleware apps, pipelines, and scripts.',
             'Develop and maintain Python and Node.js scripts for Extract-Transform-Load, analysis, and maintenance.',
             'Develop web apps to support operations and business needs, including GIS tools, interactive maps and charting apps, complex form and data entry with validation, and other special requests.',
             'Support the GIS Team managing Esri software, geospatial databases, scripting, pipelines, webhooks, ArcGIS apps, custom JS apps, and software integration solutions.',
             'Manage Esri Enterprise GIS, along with the GIS Specialist, including security, updates, platform integration, and more.',
-            'Develop complex Quickbase low-code applications (enterprise and department-level).  Integrate Quickbase with other software using middleware apps, pipelines, and scripts.',
             'General programming and developer special requests and software/data maintenance.',
         ]
     },
@@ -51,6 +51,7 @@ const experiences: Experience[] = [
             'Develop & maintain geospatial database, NOSQL DBs, and SQL DBs.',
             'Ongoing GIS analysis, cartography, and data management.',
             'Develop web applications, including the fully custom Mono County Parcel Viewer.',
+            'Maintain, build, integrate, and automate in Quickbase platform apps',
             'Script extensive data ETL routines for GIS data integration, feature class updates, and consumption through enterprise software.',
             'Covid-era development of massive and extensive low-code application for managing LOTS of data.',
         ]
@@ -77,7 +78,7 @@ const experiences: Experience[] = [
 
     {
         title: 'Web & GIS Developer',
-        employer: 'Geospatial Research & Information Laboratory',
+        employer: 'Geospatial Research & Information Laboratory @ NAU',
         date: {
             start: new Date(2013, 3),
             end: new Date(2014, 9),

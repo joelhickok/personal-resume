@@ -34,6 +34,7 @@ const languages = [
 
 const strengths = [
     'Geospatial Integrations',
+    'Quickbase',
     'Software Infrastructure Management',
     'Geospatial Apps &amp; Web Maps',
     'UI/UX',

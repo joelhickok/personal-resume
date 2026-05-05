@@ -19,8 +19,7 @@ export default function Header() {
                 <div className="header-intro-title1">Joel Hickok</div>
 
                 <div className="header-intro-title2">
-                    Geospatial Professional <br className="visible sm:hidden"/>
-                    &amp; Web Developer
+                     Developer &amp; Geospatial Professional
                 </div>
 
             </div>

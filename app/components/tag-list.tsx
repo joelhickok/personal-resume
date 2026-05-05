@@ -1,3 +1,4 @@
+//
 import he from 'he'
 
 interface Props {

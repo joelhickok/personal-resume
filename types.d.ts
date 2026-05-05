@@ -16,3 +16,5 @@ interface PopoverContentProps {
     childRect: Rect,
     popoverRect: Rect,
 }
+
+declare module 'he'
